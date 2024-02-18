@@ -1,0 +1,121 @@
+/* styles.css */
+
+@font-face {
+    font-family: 'Graduate';
+    src: url('Font/Graduate-Regular.ttf') format('truetype'),
+    /* Additional font formats can be included for wider browser support */
+}
+
+/* Resetting default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures that padding and border are included in the element's total width and height */
+}
+
+/* Style for the header */
+header {
+    background-color: #6A0F49;
+    color: #97EFE9;
+    padding: 20px;
+    text-align: left;
+    border: 0; /* Explicitly setting border to 0 */
+    position: relative; /* Setting position to relative to position the line */
+}
+
+/* Style for the line */
+.header-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15px; /* Height of the line */
+    background-color: #4A001F; /* Color of the line */
+}
+
+/* Style for the section */
+.about-me {
+    background-color: #6A0F49;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left; /* Aligning text to the left */
+    margin: 20px auto; /* Centers the section horizontally and adds separation from the header */
+    max-width: 800px; /* Increases the width of the section */
+    display: flex; /* Using flexbox for layout */
+    align-items: center; /* Vertically centering items */
+    font-size: 1.2em; /* Increases the font size of the text */
+}
+
+section {
+    text-align: left; /* Aligning text to the left */
+    margin: 20px auto; /* Centers the section horizontally and adds separation from the header */
+    max-width: 800px; /* Increases the width of the section */
+    display: flex; /* Using flexbox for layout */
+    align-items: center; /* Vertically centering items */
+    font-size: 1.2em; /* Increases the font size of the text */
+}
+
+/* Style for the image */
+.rounded-image {
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 20px; /* Adds some space between the image and the text */
+    flex-shrink: 0; /* Prevents image from shrinking */
+}
+
+/* Style for the text container */
+.text-container {
+    flex-grow: 10; /* Allows text to grow and fill remaining space */
+}
+
+body {
+    font-family: 'Abel', sans-serif;
+    color: #97EFE9;
+    background-color: #2E0219;
+}
+
+#portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.project {
+    background-color: #6A0F49;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.project img {
+    max-width: 100%; /* Ensure the image doesn't exceed the width of its container */
+    max-height: 100%; /* Ensure the image doesn't exceed the height of its container */
+    width: auto; /* Allow the image to adjust its width while maintaining aspect ratio */
+    height: auto; /* Allow the image to adjust its height while maintaining aspect ratio */
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.Gold-Rush {
+    font-family: 'Graduate', sans-serif;
+    color: #FFB86F; /* Use dedicated color */
+}
+
+.tags {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #4A001F; /* Tag background color */
+    color: #97EFE9; /* Tag text color */
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-right: 5px;
+}
+
+.project-description {
+    font-size: 1em;
+    line-height: 1.5;
+}
