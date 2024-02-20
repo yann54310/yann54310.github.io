@@ -76,8 +76,8 @@ body {
 
 #portfolio {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(399px,800px));
-    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1920px));
+    grid-gap: 30px;
 }
 
 .project {
