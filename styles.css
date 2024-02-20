@@ -76,7 +76,7 @@ body {
 
 #portfolio {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(399px,800px));
     grid-gap: 20px;
 }
 
@@ -95,7 +95,7 @@ body {
     margin-bottom: 10px;
 }
 
-.Gold-Rush {
+.Game_Title {
     font-family: 'Graduate', sans-serif;
     color: #FFB86F; /* Use dedicated color */
 }
@@ -119,3 +119,24 @@ body {
     font-size: 1em;
     line-height: 1.5;
 }
+
+.download-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    padding: 10px 24px;
+    transition-duration: 0.4s;
+  }
+  
+  .download-button:hover {
+    background-color: #45a049;
+  }
+  
